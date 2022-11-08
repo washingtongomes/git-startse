@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Aprendendo Html, CSS & Git</title>
+  </head>
+  <body>
+   <div class="container">
+    <p class="pagIndex">CSS na pratica - <span>StarteSe</span></p>
+
+    <table id="customers">
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Telefone</th>
+      </tr>
+
+      <tr>
+        <td>Washington</td>
+        <td>50 anos</td>
+        <td>99-9999-9999</td>
+      </tr>
+
+      <tr>
+        <td>Jose</td>
+        <td>55 anos</td>
+        <td>99-9999-9999</td>
+      </tr>
+
+      <tr>
+        <td> Maria </td>
+        <td>51 anos</td>
+        <td>99-9999-9999</td>
+      </tr>
+    </table>
+    <br /><br />
+
+    <h1>Contato</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <div>
+          <label for="nome" class="obrigatorio">Nome*: </label>
+          <input
+            type="text"
+            name="name"
+            id="nome"
+            placeholder="Nome completo"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email" class="obrigatorio">E-mail*: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="e-mail@exemplo.com"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <div>
+        <fieldset>
+          <legend>Assunto: </legend>
+          <select name="assunto" id="assunto">
+            <option value="" selected></option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="Sugestao">Sugestao</option>
+            <option value="elogio">Elogio</option>
+            <option value="outro">outro</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="mensagem" class="obrigatorio"> Mensagem*:  </label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+      </div>
+      <div class="cadastro">
+        <input type="checkbox" name="cadastro" id="cadastro" />
+        <label for="cadastro" > Desejo receber e-mails informativos </label>
+      </div>
+
+      <div class="cadastro">
+        <input type="submit" value="Enviar mensagem">
+
+      </div>
+    </form>
+</div>
+  </body>
+</html>
